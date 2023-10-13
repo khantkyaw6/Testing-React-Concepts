@@ -16,6 +16,8 @@ import { products, people } from "../constant";
 import RegularList from "./RegularList";
 import SmallPersonList from "./people/SmallPersonList";
 import LargePersonList from "./people/LargePersonList";
+import SmallProductList from "./product/SmallProductList";
+import LargeProductList from "./product/LargeProductList";
 // import LoginForm from "./login/LoginForm";
 // import { ErrorBoundary } from "./errorBoundy";
 
@@ -54,6 +56,16 @@ function App() {
         items={people}
         resourceName={"people"}
         itemComponent={LargePersonList}
+      />
+      <RegularList
+        items={products}
+        resourceName={"product"}
+        itemComponent={SmallProductList}
+      />
+      <RegularList
+        items={products}
+        resourceName={"product"}
+        itemComponent={LargeProductList}
       />
       {/* <SplitScreen leftWeight={1} rightWeight={3}>
         <LeftHandComponent name={"Shawn"} />
