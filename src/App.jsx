@@ -18,6 +18,8 @@ import SmallPersonList from "./people/SmallPersonList";
 import LargePersonList from "./people/LargePersonList";
 import SmallProductList from "./product/SmallProductList";
 import LargeProductList from "./product/LargeProductList";
+import NumberList from "./NumberList";
+import Modal from "./modal/Modal";
 // import LoginForm from "./login/LoginForm";
 // import { ErrorBoundary } from "./errorBoundy";
 
@@ -47,7 +49,10 @@ function App() {
 
   return (
     <>
-      <RegularList
+      <Modal>
+        <LargeProductList product={products[0]} />
+      </Modal>
+      {/* <RegularList
         items={people}
         resourceName={"people"}
         itemComponent={SmallPersonList}
@@ -56,8 +61,8 @@ function App() {
         items={people}
         resourceName={"people"}
         itemComponent={LargePersonList}
-      />
-      <RegularList
+      /> */}
+      {/* <RegularList
         items={products}
         resourceName={"product"}
         itemComponent={SmallProductList}
@@ -66,7 +71,17 @@ function App() {
         items={products}
         resourceName={"product"}
         itemComponent={LargeProductList}
+      /> */}
+      {/* <NumberList
+        items={products}
+        resourceName={"product"}
+        itemComponent={SmallProductList}
       />
+      <NumberList
+        items={products}
+        resourceName={"product"}
+        itemComponent={LargeProductList}
+      /> */}
       {/* <SplitScreen leftWeight={1} rightWeight={3}>
         <LeftHandComponent name={"Shawn"} />
         <RightHandComponent message={"This is mesg for shawn"} />
