@@ -1,0 +1,43 @@
+.appBg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: url("../src//images/codingBg.jpg");
+  background-size: cover;
+}
+
+.loginForm {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.34);
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.9px);
+  -webkit-backdrop-filter: blur(2.9px);
+  border: 1px solid rgba(247, 222, 222, 0.03);
+}
+
+.socialLogin {
+  font-size: 24px;
+  display: flex;
+  color: white;
+  gap: 24px;
+  justify-content: center;
+}
+
+.socialIcon {
+  cursor: pointer;
+}
+
+.facebookIcon {
+  color: "#DB4437";
+}
+
+.twitterIcon {
+  color: "#DB4437";
+}
+.googleIcon {
+  color: "#DB4437";
+}
